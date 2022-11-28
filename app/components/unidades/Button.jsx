@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 
 const Button = ({ unidad }) => {
 	const pathName = usePathname();
-	console.log(pathName);
 	return (
 		<Link
 			href={`/${unidad}/${

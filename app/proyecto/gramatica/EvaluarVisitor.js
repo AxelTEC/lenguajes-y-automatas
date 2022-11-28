@@ -49,7 +49,6 @@ export default class EvaluarVisitor extends CalculadoraVisitor {
 	visitSumRes(ctx) {
 		let left = this.visit(ctx.expr(0));
 		let right = this.visit(ctx.expr(1));
-		console.log(ctx.op.type);
 		if (ctx.op.type === CalculadoraParser.ADD) return left + right;
 		return left - right;
 	}
@@ -64,14 +63,12 @@ export default class EvaluarVisitor extends CalculadoraVisitor {
 
 	// Visit a parse tree produced by CalculadoraParser#int.
 	visitNum(ctx) {
-		console.log(ctx.NUM().getText() + " => " + parseFloat(ctx.NUM().getText()));
 		return parseFloat(ctx.NUM().getText());
 	}
 
 	visitExponencial(ctx) {
 		let left = this.visit(ctx.expr(0));
 		let right = this.visit(ctx.expr(1));
-		console.log({ left, right });
 		return left * Math.pow(10, right);
 	}
 
@@ -79,7 +76,6 @@ export default class EvaluarVisitor extends CalculadoraVisitor {
 	visitPowSqrt(ctx) {
 		let left = this.visit(ctx.expr(0));
 		let right = this.visit(ctx.expr(1));
-		console.log({ left, right });
 		if (ctx.op.type === CalculadoraParser.POW) return Math.pow(left, right);
 		return Math.pow(right, 1 / left);
 	}

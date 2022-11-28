@@ -4,7 +4,6 @@ import CalculadoraParser from "../antlrJS/CalculadoraParser.js";
 import EvaluarVisitor from "./EvaluarVisitor.js";
 
 export const compilar = (input) => {
-	console.log(input);
 	const chars = new antlr4.InputStream(input);
 	const lexer = new CalculadoraLexer(chars);
 	const tokens = new antlr4.CommonTokenStream(lexer);

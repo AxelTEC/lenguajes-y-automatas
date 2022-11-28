@@ -28,8 +28,11 @@ const Banner = () => {
 			</div>
 			<div className="xe w-10 h-10 top-10 right-[-3rem] z-10 backdrop-blur-xl mt-10 absolute md:rounded-lg md:right-[15%] sm:right-[5%]">
 				<Image
+					alt="Maquina de turing"
 					src={banner}
 					fill={true}
+					priority
+					sizes="(max-width: 850px) 33vw, (max-width: 1200px) 75vw"
 					className="object-cover scale-x-[-1] md:scale-x-[1]"
 				/>
 			</div>

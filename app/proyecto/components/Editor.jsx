@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+"use client";
 import styles from "./../styles/Components.module.css";
 import { Icon } from "@iconify/react";
 import AceEditor from "react-ace/lib/ace";
