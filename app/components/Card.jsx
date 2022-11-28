@@ -1,5 +1,5 @@
-"use client";
-import { Icon } from "@iconify/react";
+/* "use client";
+import { Icon } from "@iconify/react"; */
 import Link from "next/link";
 import React from "react";
 
@@ -16,11 +16,11 @@ const Card = ({ title, text, url }) => {
 			</div>
 			<div className="flex gap-3 sm:justify-between">
 				<Link href={`${url}/teoria`} className={linkStyle}>
-					<Icon icon="mdi:file-document" />
+					{/* <Icon icon="mdi:file-document" /> */}
 					<span className="text-white">Teoría</span>
 				</Link>
 				<Link href={`${url}/ejercicios`} className={linkStyle}>
-					<Icon icon="mdi:pencil" />
+					{/* <Icon icon="mdi:pencil" /> */}
 					<span className="text-white">Ejercicios</span>
 				</Link>
 			</div>
