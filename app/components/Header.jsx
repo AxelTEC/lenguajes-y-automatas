@@ -3,7 +3,9 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Icon } from "@iconify/react";
+
 function getWindowDimensions() {
+	if (typeof window === "undefined") return;
 	const { innerWidth: width, innerHeight: height } = window;
 	return {
 		width,
