@@ -1,6 +1,6 @@
 "use client";
 import { Icon } from "@iconify/react";
-import Link from "next/Link";
+import Link from "next/link";
 import React from "react";
 
 const Card = ({ title, text, url }) => {
