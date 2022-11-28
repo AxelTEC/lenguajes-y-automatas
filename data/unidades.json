@@ -1,0 +1,29 @@
+{
+	"unidades": [
+		{
+			"title": "Unidad 1",
+			"text": "Durante esta unidad se describen los principales conceptos que nos ayudarán a tener una mejor idea sobre el funcionamiento de los traductores y las fases de un compilador.",
+			"url": "unidad1"
+		},
+		{
+			"title": "Unidad 2",
+			"text": "En la unidad 2 se explican a detalle el funcionamiento de las expresiones regulares y se realizan distintas prácticas aplicando RegExp en el lenguajes de javascript.",
+			"url": "unidad2"
+		},
+		{
+			"title": "Unidad 3",
+			"text": "Se hace una introducción a los autómatas finitos, se definen conceptos y se entiende la diferencia entre autómatas finitos determinista y no deterministas, Por último, se realizan múltiples ejercicios con sus respectivos diagramas de estados.",
+			"url": "unidad3"
+		},
+		{
+			"title": "Unidad 4",
+			"text": "Durante esta unidad se entiende a fondo la parte del compilador “Análisis Léxico” se acompaña con distintos ejercicios utilizando la herramienta  de antlr4 para la creación de gramáticas.",
+			"url": "unidad4"
+		},
+		{
+			"title": "Unidad 5",
+			"text": "En la unidad 5 se adquieren conceptos enfocados al “Análisis Sintáctico”, se complementa el conocimiento aplicado en textos que detecten ciertos criterios según el ejercicio, y por último se implementa la interacción con javascript para realizar una calculadora.",
+			"url": "unidad5"
+		}
+	]
+}

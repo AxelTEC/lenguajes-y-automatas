@@ -1,0 +1,20 @@
+{
+	"unidad": "Unidad 5",
+	"title": "Análisis Sintáctico",
+	"concepts": [
+		{
+			"name": "Analizador sintáctico",
+			"description": "Es la fase del analizador que se encarga de chequear el texto de entrada en base a una gramática dada. Y en caso de que el programa de entrada sea válido, suministra el árbol sintáctico que lo reconoce. En teoría, se supone que la salida del analizador sintáctico es alguna representación del árbol sintáctico que reconoce la secuencia de tokens suministrada por el analizador léxico"
+		}
+	],
+	"exercises": [
+		{
+			"name": "Binario",
+			"description": "Realizar una gramática que permita identificar números binarios y convertirlo a decimal, utilizando nodejs."
+		},
+		{
+			"name": "Calculadora",
+			"description": "Realiza una calculadora que permita guardar variables, imprimir, sumar, restar, multiplicar, dividir, potencias, raíces y exponenciales, aplicando los conocimientos a lo largo del semestre."
+		}
+	]
+}

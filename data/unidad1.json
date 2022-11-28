@@ -1,0 +1,41 @@
+{
+	"unidad": "Unidad 1",
+	"title": "Introducción a la Teoría de Lenguajes Formales",
+	"concepts": [
+		{
+			"name": "Alfabeto",
+			"description": "Un alfabeto es un conjunto finito no vacío, cuyos elementos se denominan letras o símbolos. Denotamos un alfabeto arbitrario con la letra Σ."
+		},
+		{
+			"name": "Cadena",
+			"description": "Una cadena o palabra sobre un alfabeto Σ. admitimos la existencia de una única cadena que no tiene símbolos, la cual se denomina cadena vacía y se denota con λ. la cadena vacía desempeña, en la teoría de lenguajes formales, un papel similar al que desempeña el conjunto vacío Ø en la teoría de conjuntos."
+		},
+		{
+			"name": "Cadena Vacía",
+			"description": "Una cadena vacía es la única cadena de caracteres de tamaño cero. Y la podemos denotar usualmente con letras λ o Є (Griegas)."
+		},
+		{
+			"name": "Lenguaje",
+			"description": "Es un conjunto de cadenas, de todas las seleccionadas de un Σ*. donde Σ determinado el alfabeto se denomina lenguaje. Si Σ es un alfabeto y L Σ*, entonces L es un lenguaje de Σ. Observe que un lenguaje de Σ no necesita incluir cadenas con todos los símbolos de Σ, ya que una vez que hemos esta que L es un lenguaje de Σ, también sabemos que es un lenguaje de cualquier alfabeto que sea un súper conjunto de Σ."
+		},
+		{
+			"name": "Traductor",
+			"description": "Un traductor es un programa que tiene como entrada un texto escrito en un lenguaje (lenguaje fuente) y como salida produce un texto escrito en un lenguaje (lenguaje objeto) que preserva el significado de origen. Ejemplos de traductores son los ensambladores y los compiladores."
+		},
+		{
+			"name": "Fases de un compilador",
+			"description": "Los compiladores son programas de computadora que traducen de un lenguaje a otro. Un compilador toma como su entrada un programa escrito en lenguaje fuente y produce un programa equivalente escrito en lenguaje objeto.• Un compilador se compone internamente de varias etapas, o fases, que realizan operaciones lógicas.",
+			"image": "fasescompilacion.png"
+		}
+	],
+	"exercises": [
+		{
+			"name": "Crear un Lenguaje",
+			"description": "Crea un L con Σ={a,b}+ donde siempre se inicie con una a."
+		},
+		{
+			"name": "Crear un Lenguaje",
+			"description": "Crea un L con el alfabeto {+,0,1} donde siempre despues de un 1 exista un +."
+		}
+	]
+}

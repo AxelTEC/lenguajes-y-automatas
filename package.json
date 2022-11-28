@@ -9,10 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "antlr4": "^4.11.0",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
     "next": "13.0.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-ace": "^10.1.0",
+    "react-dom": "18.2.0",
+    "tailwind-scrollbar": "^2.0.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@iconify/react": "^4.0.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4"
   }
 }

@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.ex {
+		clip-path: polygon(0 0, 61% 0, 100% 100%, 0% 100%);
+		width: 75%;
+		height: 80%;
+		filter: url(#redondo);
+		/* border-radius: 10px; */
+		filter: url(#redondo);
+		border-radius: 10px 0px 0px 10px;
+	}
+	.xe {
+		clip-path: polygon(0 0, 100% 0%, 100% 100%, 32% 100%);
+		width: 75%;
+		height: 80%;
+		filter: url(#redondo);
+		border-radius: 0px 10px 10px 0px;
+		overflow: hidden;
+	}
+	@media (max-width: 825px) {
+		.ex,
+		.xe {
+			clip-path: none;
+			width: 40%;
+		}
+	}
+	@media (max-width: 639px) {
+		.ex,
+		.xe {
+			clip-path: none;
+			width: 60%;
+		}
+	}
+
+	.text-shadow {
+		text-shadow: #6366f1 1px 0 10px;
+	}
+}

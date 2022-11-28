@@ -1,0 +1,56 @@
+{
+	"unidad": "Unidad 3",
+	"title": "Autómatas Finitos",
+	"concepts": [
+		{
+			"name": "Automata finito",
+			"description": "Un autómata finito (AF) o máquina de estado finito es un modelo computacional que realiza cómputos en forma automática sobre una entrada para producir una salida. Este modelo está conformado por un alfabeto, un conjunto de estados finito, una función de transición, un estado inicial y un conjunto de estados finales. "
+		},
+		{
+			"name": "Definicion formal",
+			"description": "Formalmente, un autómata finito es una 5-tupla <Q, Σ, q0, δ, F> donde:\nQ es un conjunto finito de estados;\nΣ es un alfabeto finito de símbolos terminales;\nq0 es el estado inicial en Q;\nδ es la relación de transiciones de la forma <qi,x,qj> con qi y qj como estados de Q y x, símbolo de Σ ó puede ser también la cadena vacía;\nF es el conjunto de estados finales o de aceptación y (evidentemente) subconjunto de Q."
+		},
+		{
+			"name": "Automata finito determinista (AFD)",
+			"description": "Un autómata finito determinista (abreviado AFD) es un autómata finito que además es un sistema determinista; es decir, para cada estado en que se encuentre el autómata, y con cualquier símbolo del alfabeto leído, existe siempre no más de una transición posible desde ese estado y con ese símbolo."
+		}
+	],
+	"exercises": [
+		{
+			"name": "Ejercicio 1",
+			"description": "Crea un AFD que acepte todas las palabras que tengan una b al final Σ={a,b}"
+		},
+		{
+			"name": "Ejercicio 2",
+			"description": "Crea un AFD que acepte todas las cadenas de tamaño 2 Σ={a,b}"
+		},
+		{
+			"name": "Ejercicio 3",
+			"description": "Crea un AFD donde todas las cadenas inicien con 0 Σ={0,1}"
+		},
+		{
+			"name": "Ejercicio 4",
+			"description": "Contruye un AFD que acepte todas las cadenas sobre Σ={a,b} donde en cada cadena se encuentra la subcadena 'aabb'"
+		},
+		{
+			"name": "Ejercicio 5",
+			"description": "Contruye un AFD que acepte todas las cadenas sobre Σ={a,b} donde en cada cadena se encuentra la subcadena 'aabb'"
+		},
+		{
+			"name": "Ejercicio 6",
+			"description": "Contruye un AFD que acepte todas las cadenas sobre Σ={a,b} donde las cadenas inicien con 'a' y terminen con 'a'"
+		},
+		{
+			"name": "Ejercicio 7",
+			"description": "Contruye un AFD donde cada cadena inice con 'ab' Σ={a,b}"
+		},
+		{
+			"name": "Ejercicio 8",
+			"description": "Contruye un AFD donde cada cadena inice con con una letra y finalice con otra Σ={a,b}"
+		},
+		{
+			"name": "Ejercicio 9",
+			"description": "Contruye un AFD donde cada 'a' sea seguida por una 'b' Σ={a,b}"
+		}
+	]
+}

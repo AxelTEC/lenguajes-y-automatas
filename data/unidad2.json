@@ -1,0 +1,16 @@
+{
+	"unidad": "Unidad 2",
+	"title": "Expresiones Regulares",
+	"concepts": [
+		{
+			"name": "Expresiones Regulares",
+			"description": "Es una secuencia de caracteres que conforma un patrón de búsqueda. Se utilizan principalmente para la búsqueda de patrones de cadenas de caracteres u operaciones de sustituciones. Las expresiones regulares son patrones utilizados para encontrar una determinada combinación de caracteres dentro de una cadena de texto. Las expresiones regulares proporcionan una manera muy flexible de buscar o reconocer cadenas de texto. Por ejemplo, el grupo formado por las cadenas Handel, Händel y Haendel se describe con el patrón 'H(a|ä|ae)ndel'."
+		}
+	],
+	"exercises": [
+		{
+			"name": "Buscador de alimentos",
+			"description": "Dado un archivo JSON genera un buscador de alimentos en javascript utilizando expresiones regulares"
+		}
+	]
+}

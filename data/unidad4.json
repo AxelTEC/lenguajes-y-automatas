@@ -1,0 +1,44 @@
+{
+	"unidad": "Unidad 4",
+	"title": "Análisis Léxico",
+	"concepts": [
+		{
+			"name": "Analizador Léxico",
+			"description": "Un analizador léxico o analizador lexicográfico (en inglés scanner o tokenizer) es la primera fase de un compilador, consistente en un programa que recibe como entrada el código fuente de otro programa (secuencia de caracteres) y produce una salida compuesta de tokens (componentes léxicos) o símbolos. Estos tokens sirven para una posterior etapa del proceso de traducción, siendo la entrada para el analizador sintáctico (en inglés parser). La especificación de un lenguaje de programación a menudo incluye un conjunto de reglas que definen el léxico. Estas reglas consisten comúnmente en expresiones regulares que indican el conjunto de posibles secuencias de caracteres que definen un token o lexema."
+		},
+		{
+			"name": "Análisis",
+			"description": "Esta etapa está basada usualmente en una máquina de estados finitos. Esta máquina contiene la información de las posibles secuencias de caracteres que puede conformar cualquier token que sea parte del lenguaje (las instancias individuales de estas secuencias de caracteres son denominados lexemas). Por ejemplo, un token de naturaleza entero puede contener cualquier secuencia de caracteres numéricos."
+		},
+		{
+			"name": "Token",
+			"description": "Un token léxico o simplemente token es una cadena con un significado asignado y, por lo tanto, identificado. Está estructurado como un par que consta de un «nombre de token» y un «valor de token» opcional. El nombre del token es una categoría de unidad léxica."
+		},
+		{
+			"name": "Antlr4",
+			"description": "ANTLR es un poderoso generador de analizadores que puede usar para leer, procesar, ejecutar o traducir texto estructurado o archivos binarios. Es ampliamente utilizado en la academia y la industria para construir todo tipo de lenguajes, herramientas y marcos. La búsqueda de Twitter usa ANTLR para el análisis de consultas, con más de 2 mil millones de consultas por día."
+		}
+	],
+	"exercises": [
+		{
+			"name": "Lista de asistencia",
+			"description": "Crea una gramática  con antlr que permita saber dada una lista cuantas personas asistieron y cuantas faltaron."
+		},
+		{
+			"name": "Binario",
+			"description": "Crea una gramática  con antlr que permita converir todos los numero binarios a numeros decimales."
+		},
+		{
+			"name": "JSON",
+			"description": "Crea una gramática  con antlr que permita generar el arbol sintactico de un archivo JSON."
+		},
+		{
+			"name": "IP",
+			"description": "Crea una gramática  con antlr que permita imprimir todas las IP's encontradas dado un archivo de prueba."
+		},
+		{
+			"name": "Tarjeta de credito",
+			"description": "Crea una gramática  con antlr que permita imprimir las tarjetas de credito, validars e indicar el tipo de tarjeta"
+		}
+	]
+}
