@@ -1,7 +1,6 @@
-import React from "react";
-import ContentLayout from "../components/ContentLayout";
+import ContentLayout from "./../components/ContentLayout";
 
-const page = () => {
+const About = () => {
 	return (
 		<ContentLayout>
 			<Data
@@ -17,10 +16,10 @@ const page = () => {
 const Data = ({ name, description }) => {
 	return (
 		<h2 className="text-center text-white text-4xl mt-8">
-			<b className="text-indigo-500 text-shadow">{name}:</b> <br />{" "}
+			<b className="text-indigo-500 text-shadow">{name}:</b> <br />
 			{description}
 		</h2>
 	);
 };
 
-export default page;
+export default About;
