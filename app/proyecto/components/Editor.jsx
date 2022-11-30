@@ -1,9 +1,9 @@
 "use client";
+import "ace-builds";
+import AceEditor from "react-ace/lib/ace";
+import "ace-builds/webpack-resolver";
 import styles from "./../styles/Components.module.css";
 import { Icon } from "@iconify/react";
-import AceEditor from "react-ace/lib/ace";
-import "ace-builds/src-noconflict/theme-dawn";
-import "ace-builds/src-noconflict/mode-javascript";
 
 const Editor = ({
 	handleCompile,
@@ -20,10 +20,8 @@ const Editor = ({
 	return (
 		<div id="editor-code" className={styles["c-editor"]}>
 			<AceEditor
-				mode="javascript"
 				width="100%"
 				height="90%"
-				theme="dawn"
 				onChange={handleChange}
 				value={currentFile ? currentFile.code : ""}
 			/>

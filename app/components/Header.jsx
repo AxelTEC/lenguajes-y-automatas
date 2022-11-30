@@ -49,8 +49,8 @@ const Header = () => {
 			setWindowDimensions(getWindowDimensions());
 		}
 
-		window.addEventListener("resize", handleResize);
-		return () => window.removeEventListener("resize", handleResize);
+		window?.addEventListener("resize", handleResize);
+		return () => window?.removeEventListener("resize", handleResize);
 	}, []);
 	return (
 		<header className="sm:px-4 w-full h-[10vh] flex justify-between items-center px-10 shadow-2xl z-50 backdrop-blur-xl sticky top-0">
@@ -61,7 +61,7 @@ const Header = () => {
 				<span className="text-indigo-500 text-2xl sm:text-xl">Æ</span>
 				<span className="ml-2"> Lengujes y Automatas I</span>
 			</Link>
-			{windowDimensions.width > 825 ? (
+			{windowDimensions?.width > 825 ? (
 				<nav className="w-auto flex gap-4 md:hidden">
 					{Links?.map(({ path, title }) => (
 						<Link

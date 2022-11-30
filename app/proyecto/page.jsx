@@ -5,7 +5,6 @@ import FileBrowser from "./components/FileBrowser";
 import Output from "./components/Output";
 import BTNShowFilesMenu from "./components/BTNShowFilesMenu";
 import Editor from "./components/Editor";
-import Header from "./../components/Header";
 import styles from "./styles/Components.module.css";
 import { useState, useEffect } from "react";
 import { useLocalStorage } from "./../../hooks/useLocalStorage";
