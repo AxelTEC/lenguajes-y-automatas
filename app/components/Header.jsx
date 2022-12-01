@@ -4,15 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Icon } from "@iconify/react";
 
-function getWindowDimensions() {
-	if (typeof window === "undefined") return;
-	const { innerWidth: width, innerHeight: height } = window;
-	return {
-		width,
-		height,
-	};
-}
-
 const Header = () => {
 	const router = usePathname();
 	const [menu, setMenu] = useState(false);
@@ -43,7 +34,7 @@ const Header = () => {
 	];
 
 	return (
-		<header className="sm:px-6 w-full h-[10vh] flex justify-between items-center px-10 shadow-2xl z-50 backdrop-blur-xl sticky top-0">
+		<header className="max-w-full w-full sm:px-6  h-[10vh] flex justify-between items-center px-10 shadow-2xl z-50 backdrop-blur-xl sticky top-0">
 			<Link
 				href="/"
 				className="text-gray-100 sm:text-lg text-xl font-extrabold text-shadow flex items-center"
@@ -65,8 +56,8 @@ const Header = () => {
 			</nav>
 
 			<nav
-				className={`hidden md:block fixed w-3/4 bg-slate-800 h-[90vh] top-[10vh] right-0 transition-all ease-in-out ${
-					menu ? "translate-x-0" : "translate-x-full"
+				className={`fixed w-3/4 bg-slate-800 h-[90vh] top-[10vh] right-0 transition-all ease-in-out ${
+					menu ? "translate-x-0 block" : "translate-x-full hidden"
 				}`}
 			>
 				{Links?.map(({ path, title }) => (

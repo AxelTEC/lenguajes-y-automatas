@@ -4,6 +4,7 @@ import Card from "./components/Card";
 import ContentLayout from "./components/ContentLayout";
 import fsPromises from "fs/promises";
 import path from "path";
+import { v4 as uuidv4 } from "uuid";
 
 const getUnidades = async () => {
 	const filePath = path.join(process.cwd(), `data/unidades.json`);
@@ -21,7 +22,7 @@ export default async function HomePage() {
 					Temas:
 				</h1>
 				{unidades?.map(({ title, text, url }, i) => (
-					<Card key={i} title={title} text={text} url={url} />
+					<Card key={uuidv4()} title={title} text={text} url={url} />
 				))}
 			</ContentLayout>
 		</>
