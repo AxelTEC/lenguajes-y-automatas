@@ -1,7 +1,8 @@
 "use client";
+import AceEditor from "react-ace";
 import "ace-builds";
-import AceEditor from "react-ace/lib/ace";
 import "ace-builds/webpack-resolver";
+import "ace-builds/src-noconflict/theme-tomorrow_night";
 import styles from "./../styles/Components.module.css";
 import { Icon } from "@iconify/react";
 
@@ -22,6 +23,7 @@ const Editor = ({
 			<AceEditor
 				width="100%"
 				height="90%"
+				theme="tomorrow_night"
 				onChange={handleChange}
 				value={currentFile ? currentFile.code : ""}
 			/>

@@ -53,7 +53,7 @@ const Header = () => {
 		return () => window?.removeEventListener("resize", handleResize);
 	}, []);
 	return (
-		<header className="sm:px-4 w-full h-[10vh] flex justify-between items-center px-10 shadow-2xl z-50 backdrop-blur-xl sticky top-0">
+		<header className="sm:px-6 w-full h-[10vh] flex justify-between items-center px-10 shadow-2xl z-50 backdrop-blur-xl sticky top-0">
 			<Link
 				href="/"
 				className="text-gray-100 sm:text-lg text-xl font-extrabold text-shadow flex items-center"
