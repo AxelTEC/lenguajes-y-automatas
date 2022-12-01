@@ -53,7 +53,6 @@ export default function Compilador() {
 				<Head>
 					<title>Compilador online</title>
 				</Head>
-				{/* <Header classStyle={styles["c-header"]} /> */}
 				<FileBrowser
 					showFilesMenu={showFilesMenu}
 					files={files}
