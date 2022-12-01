@@ -1,8 +1,8 @@
+import { v4 as uuidv4 } from "uuid";
 import ContentLayout from "../../components/ContentLayout";
 import Button from "../../components/unidades/Button";
 import DataCard from "../../components/unidades/DataCard";
 import Title from "../../components/unidades/Title";
-import fasescompilacion from "./../../../helpers/images/fasescompilacion.png";
 import fsPromises from "fs/promises";
 import path from "path";
 
@@ -20,7 +20,12 @@ const page = async ({ params }) => {
 				<Title unidad={data.unidad} title={data.title} />
 				{data?.concepts?.map(({ name, description, image = false }) => {
 					return (
-						<DataCard name={name} description={description} image={image} />
+						<DataCard
+							key={uuidv4()}
+							name={name}
+							description={description}
+							image={image}
+						/>
 					);
 				})}
 				<Button unidad={params.unidad} />

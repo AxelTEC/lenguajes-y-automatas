@@ -1,4 +1,4 @@
-import React from "react";
+import { v4 as uuidv4 } from "uuid";
 import ContentLayout from "../../components/ContentLayout";
 import Button from "../../components/unidades/Button";
 import DataCard from "../../components/unidades/DataCard";
@@ -17,8 +17,9 @@ const Ejercicios = async ({ params }) => {
 		<>
 			<ContentLayout>
 				<Title unidad={data.unidad} title={data.title} />
-				{data?.exercises?.map(({ name, description, image = false }) => (
+				{data?.exercises?.map(({ name, description, image = false }, i) => (
 					<DataCard
+						key={uuidv4()}
 						name={name}
 						description={description}
 						image={
