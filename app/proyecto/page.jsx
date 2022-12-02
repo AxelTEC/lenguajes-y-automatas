@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 import { useLocalStorage } from "./../../hooks/useLocalStorage";
 import { compilar } from "./gramatica/Calculadora";
 import { v4 as uuidv4 } from "uuid";
-import BackgroundMenu from "../components/BackgroundMenu";
+import BackgroundMenu from "./../components/BackgroundMenu";
 
 export default function Compilador() {
 	const init = [
