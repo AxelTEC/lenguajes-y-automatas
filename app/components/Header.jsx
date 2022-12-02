@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Icon } from "@iconify/react";
+import BackgroundMenu from "./BackgroundMenu";
 
 const Header = () => {
 	const router = usePathname();
@@ -42,7 +43,6 @@ const Header = () => {
 				<span className="text-indigo-500 text-2xl sm:text-xl">Æ</span>
 				<span className="ml-2"> Lengujes y Automatas I</span>
 			</Link>
-
 			<nav className="w-auto flex gap-4 md:hidden">
 				{Links?.map(({ path, title }) => (
 					<Link
@@ -54,9 +54,8 @@ const Header = () => {
 					</Link>
 				))}
 			</nav>
-
 			<nav
-				className={`fixed w-3/4 bg-slate-800 h-[90vh] top-[10vh] right-0 transition-all ease-in-out ${
+				className={`fixed z-50 w-3/4 bg-slate-800 h-[90vh] top-[10vh] right-0 transition-all ease-in-out ${
 					menu ? "translate-x-0 block" : "translate-x-full hidden"
 				}`}
 			>
@@ -73,6 +72,7 @@ const Header = () => {
 					</Link>
 				))}
 			</nav>
+			{menu && <BackgroundMenu onClick={() => setMenu(false)} />}
 			<button
 				className="text-white hidden md:inline"
 				onClick={() => setMenu(!menu)}

@@ -39,3 +39,9 @@
 		text-shadow: #6366f1 1px 0 10px;
 	}
 }
+
+:root {
+	--border: 2px solid rgba(255, 255, 255, 0.3);
+	--font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}

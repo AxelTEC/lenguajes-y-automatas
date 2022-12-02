@@ -1,5 +1,5 @@
-"use client";
-/* import AceEditor from "react-ace";
+"use client"; /* 
+import AceEditor from "react-ace";
 import "ace-builds";
 import "ace-builds/webpack-resolver";
 import "ace-builds/src-noconflict/theme-tomorrow_night"; */
@@ -18,11 +18,10 @@ const Editor = ({
 			code: newValue,
 		});
 	}; */
-	const handleChange = (e, newValue) => {
-		console.log(e);
+	const handleChange = ({ target: { value } }) => {
 		setCurrentFile({
 			...currentFile,
-			code: e.target.value,
+			code: value,
 		});
 	};
 	return (
@@ -30,17 +29,16 @@ const Editor = ({
 			{/* <AceEditor
 				width="100%"
 				height="90%"
-				theme="tomorrow_night"
 				onChange={handleChange}
 				value={currentFile ? currentFile.code : ""}
 			/> */}
-			<textarea
-				className="w-full h-[90%]"
-				onChange={handleChange}
-				value={currentFile ? currentFile.code : ""}
-				cols="30"
-				rows="10"
-			></textarea>
+			{currentFile && (
+				<textarea
+					className="w-full h-[88%] p-3 resize-none outline-none bg-zinc-900 text-white text-sm"
+					value={currentFile?.code}
+					onChange={handleChange}
+				></textarea>
+			)}
 			<div className={styles["c-editor-buttons"]}>
 				<span>Resultado:</span>
 				<div>

@@ -10,6 +10,7 @@ import { useState, useEffect } from "react";
 import { useLocalStorage } from "./../../hooks/useLocalStorage";
 import { compilar } from "./gramatica/Calculadora";
 import { v4 as uuidv4 } from "uuid";
+import BackgroundMenu from "../components/BackgroundMenu";
 
 export default function Compilador() {
 	const init = [
@@ -71,7 +72,9 @@ export default function Compilador() {
 				) : (
 					<div className={styles["c-editor"]}>Sin archivos</div>
 				)}
-
+				{showFilesMenu && (
+					<BackgroundMenu onClick={() => setShowFilesMenu(false)} />
+				)}
 				<Output output={output} />
 				<BTNShowFilesMenu
 					setShowFilesMenu={setShowFilesMenu}
