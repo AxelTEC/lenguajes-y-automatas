@@ -19,16 +19,18 @@ const Resultado = ({ src }) => {
 					className="fixed z-50 w-full h-[90vh] left-0 top-[10vh] bg-zinc-800/70 backdrop-blur-lg flex justify-center items-center"
 					onClick={() => setShowResult(false)}
 				>
-					<div className="w-3/4">
+					<div className="lg:w-2/4 md:w-3/4 sm:w-11/12 h-full m-auto  relative shadow-lg ">
 						<button
 							className="text-zinc-100"
 							onClick={() => setShowResult(false)}
 						>
 							X Cerrar
 						</button>
-						<div className="w-full m-auto h-20 overflow-hidden relative shadow-lg ">
-							<Image src={src} fill={true} className="object-cover" />
-						</div>
+						<Image
+							src={src}
+							fill={true}
+							className="object-contain relative w-full h-[unset]"
+						/>
 					</div>
 				</div>
 			)}
