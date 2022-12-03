@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
-import ContentLayout from "../../components/ContentLayout";
-import Button from "../../components/unidades/Button";
-import DataCard from "../../components/unidades/DataCard";
-import Title from "../../components/unidades/Title";
+import ContentLayout from "./../../components/ContentLayout";
+import Button from "./../components/Button";
+import DataCard from "./../components/DataCard";
+import Title from "./../components/Title";
 import fsPromises from "fs/promises";
 import path from "path";
 
@@ -17,15 +17,12 @@ const Ejercicios = async ({ params }) => {
 		<>
 			<ContentLayout>
 				<Title unidad={data.unidad} title={data.title} />
-				{data?.exercises?.map(({ name, description, image = false }, i) => (
+				{data?.exercises?.map(({ name, description, answer = false }, i) => (
 					<DataCard
 						key={uuidv4()}
 						name={name}
 						description={description}
-						image={
-							image &&
-							require(path.join(process.cwd(), `helpers/images/${image}`))
-						}
+						answer={answer}
 					/>
 				))}
 				<Button unidad={params.unidad} />

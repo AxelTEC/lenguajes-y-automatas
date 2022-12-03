@@ -1,8 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
-import ContentLayout from "../../components/ContentLayout";
-import Button from "../../components/unidades/Button";
-import DataCard from "../../components/unidades/DataCard";
-import Title from "../../components/unidades/Title";
+import ContentLayout from "./../../components/ContentLayout";
+import Button from "./../components/Button";
+import DataCard from "./../components/DataCard";
+import Title from "./../components/Title";
 import fsPromises from "fs/promises";
 import path from "path";
 
