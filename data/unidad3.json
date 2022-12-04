@@ -18,7 +18,8 @@
 	"exercises": [
 		{
 			"name": "Ejercicio 1",
-			"description": "Crea un AFD que acepte todas las palabras que tengan una b al final Σ={a,b}"
+			"description": "Crea un AFD que acepte todas las palabras que tengan una b al final Σ={a,b}",
+			"answer": "https://firebasestorage.googleapis.com/v0/b/lenguajes-y-automatas.appspot.com/o/unidad3%2FDFA-01.jpg?alt=media&token=c6639009-d449-4991-b2f8-6b82bbf93a5d"
 		},
 		{
 			"name": "Ejercicio 2",
