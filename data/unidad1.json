@@ -32,12 +32,12 @@
 		{
 			"name": "Crear un Lenguaje",
 			"description": "Crea un L con Σ={a,b}+ donde siempre se inicie con una a.",
-			"answer": "https://firebasestorage.googleapis.com/v0/b/lenguajes-y-automatas.appspot.com/o/unidad1%2Fu1-ej01.png?alt=media&token=305920ec-4fad-487c-a0a3-54660da8ebf4"
+			"img": "https://firebasestorage.googleapis.com/v0/b/lenguajes-y-automatas.appspot.com/o/unidad1%2Fu1-ej01.png?alt=media&token=305920ec-4fad-487c-a0a3-54660da8ebf4"
 		},
 		{
 			"name": "Crear un Lenguaje",
 			"description": "Crea un L con el alfabeto {+,0,1} donde siempre despues de un 1 exista un +.",
-			"answer": "https://firebasestorage.googleapis.com/v0/b/lenguajes-y-automatas.appspot.com/o/unidad1%2Fu1-ej02.png?alt=media&token=4218f743-6abd-4426-8bb3-0b1581638f7f"
+			"img": "https://firebasestorage.googleapis.com/v0/b/lenguajes-y-automatas.appspot.com/o/unidad1%2Fu1-ej02.png?alt=media&token=4218f743-6abd-4426-8bb3-0b1581638f7f"
 		}
 	]
 }

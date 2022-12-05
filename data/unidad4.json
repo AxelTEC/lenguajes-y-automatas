@@ -21,24 +21,56 @@
 	],
 	"exercises": [
 		{
-			"name": "Lista de asistencia",
-			"description": "Crea una gramática  con antlr que permita saber dada una lista cuantas personas asistieron y cuantas faltaron."
+			"name": "Hola Mundo",
+			"description": "Genera un gramatica que lea el texto 'Hola Juan' con antlr4 y genera el árbol sintáctico",
+			"grammar": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/01-HolaMundo/hola.g4"
 		},
 		{
-			"name": "Binario",
-			"description": "Crea una gramática  con antlr que permita converir todos los numero binarios a numeros decimales."
+			"name": "Función",
+			"description": "Genera un gramatica en antlr4 que lea una funcion del tipo 'void main () {}' y genera el árbol sintáctico",
+			"grammar": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/02-Funcion/LenguajeC.g4"
+		},
+		{
+			"name": "Lista de asistencia",
+			"description": "Crea una gramática  con antlr que permita saber dada una lista cuantas personas asistieron y cuantas faltaron.",
+			"grammar": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/03-Asistencias/Asistencias.g4",
+			"test": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/03-Asistencias/test.txt"
+		},
+		{
+			"name": "XML",
+			"description": "Crea una gramática  con antlr que permita leer el lenguaje de etiquetas xml y genera el árbol sintáctico ",
+			"grammar": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/04-Tag/Xml_clase.g4",
+			"test": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/04-Tag/prueba.txt"
+		},
+		{
+			"name": "Array",
+			"description": "Crea una gramática  con antlr4 que permita leer un arreglo dinamico, genera el  árbol sintáctico.",
+			"grammar": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/05-Array/Array.g4",
+			"test": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/05-Array/prueba.txt"
 		},
 		{
 			"name": "JSON",
-			"description": "Crea una gramática  con antlr que permita generar el arbol sintactico de un archivo JSON."
+			"description": "Crea una gramática  con antlr que permita leer y generar el  árbol sintáctico de un archivo JSON."
 		},
 		{
 			"name": "IP",
-			"description": "Crea una gramática  con antlr que permita imprimir todas las IP's encontradas dado un archivo de prueba."
+			"description": "Crea una gramática  con antlr que permita imprimir todas las IP's encontradas dado un archivo de prueba.",
+			"grammar": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/07-Ip/IPaddress.g4",
+			"test": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/07-Ip/testFile.dat"
+		},
+		{
+			"name": "Binario",
+			"description": "Crea una gramática  con antlr que permita converir números binarios a números decimales.",
+			"grammar": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/08-Binario/Binario.g4",
+			"test": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/08-Binario/test.txt",
+			"code": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/08-Binario/Convertidor.java"
 		},
 		{
 			"name": "Tarjeta de credito",
-			"description": "Crea una gramática  con antlr que permita imprimir las tarjetas de credito, validars e indicar el tipo de tarjeta"
+			"description": "Crea una gramática  con antlr que permita imprimir las tarjetas de credito, validars e indicar el tipo de tarjeta",
+			"grammar": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/09-CreditCard/CreditCardGrammar.g4",
+			"test": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/09-CreditCard/InputFile.dat",
+			"code": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/09-CreditCard/CreditCard.java"
 		}
 	]
 }

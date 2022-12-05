@@ -5,6 +5,7 @@ import DataCard from "./../components/DataCard";
 import Title from "./../components/Title";
 import fsPromises from "fs/promises";
 import path from "path";
+import Answer from "../components/Answer";
 
 const fetchData = async (unidad) => {
 	const filePath = path.join(process.cwd(), `data/${unidad}.json`);
@@ -17,14 +18,30 @@ const Ejercicios = async ({ params }) => {
 		<>
 			<ContentLayout>
 				<Title unidad={data.unidad} title={data.title} />
-				{data?.exercises?.map(({ name, description, answer = false }, i) => (
-					<DataCard
-						key={uuidv4()}
-						name={name}
-						description={description}
-						answer={answer}
-					/>
-				))}
+				{data?.exercises?.map(
+					(
+						{
+							name,
+							description,
+							img = false,
+							code = false,
+							demo = false,
+							grammar = false,
+							test = false,
+						},
+						i
+					) => (
+						<DataCard key={uuidv4()} name={name} description={description}>
+							<div className="flex gap-4">
+								{img && <Answer type="answer" data={img} />}
+								{demo && <Answer type="demo" data={demo} />}
+								{code && <Answer type="code" data={code} />}
+								{grammar && <Answer type="grammar" data={grammar} />}
+								{test && <Answer type="test" data={test} />}
+							</div>
+						</DataCard>
+					)
+				)}
 				<Button unidad={params.unidad} />
 			</ContentLayout>
 		</>

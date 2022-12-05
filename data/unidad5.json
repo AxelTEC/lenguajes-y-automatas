@@ -10,11 +10,15 @@
 	"exercises": [
 		{
 			"name": "Binario",
-			"description": "Realizar una gramática que permita identificar números binarios y convertirlo a decimal, utilizando nodejs."
+			"description": "Realizar una gramática que permita identificar números binarios y convertirlo a decimal, utilizando nodejs.",
+			"grammar": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-javascript/01-binario/BinarytoDecimal.g4",
+			"code": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/tree/main/antlr-javascript/01-binario"
 		},
 		{
 			"name": "Calculadora",
-			"description": "Realiza una calculadora que permita guardar variables, imprimir, sumar, restar, multiplicar, dividir, potencias, raíces y exponenciales, aplicando los conocimientos a lo largo del semestre."
+			"description": "Realiza una calculadora que permita guardar variables, imprimir, sumar, restar, multiplicar, dividir, potencias, raíces y exponenciales, aplicando los conocimientos a lo largo del semestre.",
+			"code": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/tree/main/antlr-javascript/02-calculadora",
+			"grammar": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-javascript/02-calculadora/Calculator.g4"
 		}
 	]
 }

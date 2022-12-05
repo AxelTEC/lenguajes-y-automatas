@@ -9,8 +9,20 @@
 	],
 	"exercises": [
 		{
+			"name": "Hola mundo",
+			"description": "Realiza una expresión regular en javascript, que dada la entrada 'Mi nombre es Juan y tengo 20 años' (donde 'Juan' y '20' pueden ser cualquier nombre y edad), detecte si el texto es valido para la expresion regular y que imprima el nombre de la persona indicando si es mayor o menor de edad",
+			"code": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/expresiones-regulares/01-HolaMundo/expresion_regular01.js"
+		},
+		{
 			"name": "Buscador de alimentos",
-			"description": "Dado un archivo JSON genera un buscador de alimentos en javascript utilizando expresiones regulares"
+			"description": "Dado un archivo JSON genera un buscador de alimentos en javascript utilizando expresiones regulares",
+			"code": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/expresiones-regulares/02-BuscadorConsola/expresion_regular02.js"
+		},
+		{
+			"name": "Buscador de alimentos interfaz",
+			"description": "Realiza al ejercicio anterior añadiendo una interfaz gráfica con un input para buscar y mostrando los resultados de las comidas encontradas.",
+			"code": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/tree/main/expresiones-regulares/03-BuscadorInterfaz",
+			"demo": "https://extraordinary-sherbet-86207f.netlify.app/"
 		}
 	]
 }
