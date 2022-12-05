@@ -30,7 +30,7 @@ const Header = () => {
 		},
 		{
 			path: "/about",
-			title: "About",
+			title: "Acerca de",
 		},
 	];
 
