@@ -50,7 +50,9 @@
 		},
 		{
 			"name": "JSON",
-			"description": "Crea una gramática  con antlr que permita leer y generar el  árbol sintáctico de un archivo JSON."
+			"description": "Crea una gramática  con antlr que permita leer y generar el  árbol sintáctico de un archivo JSON.",
+			"grammar": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/06-Json/Json.g4",
+			"test": "https://github.com/AxelTEC/lenguajes-y-automatas-ejercicios/blob/main/antlr-java/06-Json/prueba.json"
 		},
 		{
 			"name": "IP",
