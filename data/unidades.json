@@ -17,12 +17,12 @@
 		},
 		{
 			"title": "Unidad 4",
-			"text": "Durante esta unidad se entiende a fondo la parte del compilador “Análisis Léxico” se acompaña con distintos ejercicios utilizando la herramienta  de antlr4 para la creación de gramáticas.",
+			"text": "Durante esta unidad se aplican los conocimientos en expresiones regulares para generar gramáticas con ayuda de antlr4, una herramienta para el reconocimiento de lenguajes.",
 			"url": "unidad4"
 		},
 		{
 			"title": "Unidad 5",
-			"text": "En la unidad 5 se adquieren conceptos enfocados al “Análisis Sintáctico”, se complementa el conocimiento aplicado en textos que detecten ciertos criterios según el ejercicio, y por último se implementa la interacción con javascript para realizar una calculadora.",
+			"text": "En esta unidad se hace uso de las gramáticas para aplicarlas de forma práctica en un lenguaje de programación.",
 			"url": "unidad5"
 		}
 	]
