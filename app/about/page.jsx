@@ -8,7 +8,7 @@ const About = () => {
 				description="Instituto Tecnológico de Ensenada"
 			/>
 			<Data name="Docente" description="Xenia Padilla" />
-			<Data name="Estudiante" description="Axel A. Enciso Robles" />
+			<Data name="Estudiante" description="Axel Enciso" />
 		</ContentLayout>
 	);
 };
