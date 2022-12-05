@@ -7,15 +7,14 @@ const Banner = () => {
 		<div className="relative h-96 w-full max-w-3xl m-auto">
 			<div className="ex left-[-3rem] bg-indigo-500/10 backdrop-blur-xl mt-10 absolute z-40 md:rounded-lg md:left-[15%] md:px-3 sm:left-[5%]">
 				<div className="flex flex-col text-left justify-center h-full w-4/6 items-left p-6 md:p-1 md:w-full">
-					<h1 className="md:text-md sm:text-sm text-shadow text-center text-indigo-100 font-bold z-20 text-2xl drop-shadow-xl shadow-orange-500">
+					<h1 className="md:text-md sm:text-lg text-shadow text-center text-indigo-100 font-bold z-20 text-2xl drop-shadow-xl shadow-orange-500">
 						Lenguajes y automatas
 					</h1>
-					<p className="md:text-sm sm:text-xs text-slate-100 max-w-md text-center font-bold text-md drop-shadow-xl shadow-orange-500 md:text-justify">
-						La materia de lenguajes y autómatas nos brinda un conocimiento
-						teórico y práctico sobre cómo funcionan los lenguajes de
-						programación, la lógica que estos conllevan y su traducción a
-						leguaje maquina, con a fin de poder construir nuestro propio
-						lenguaje.
+					<p className="md:text-sm sm:text-xs sm:mt-1 text-slate-100 max-w-md text-center font-bold text-md drop-shadow-xl shadow-orange-500 md:text-justify">
+						Los lenguajes y autómatas son una parte importante de la informática
+						y la ciencia de la computación. Los lenguajes de programación se
+						utilizan para escribir programas de computadora y los autómatas son
+						utilizados para modelar y analizar ciertos sistemas de computación.
 					</p>
 					<Link
 						href="./proyecto"
